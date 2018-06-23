@@ -2,8 +2,182 @@
 <html>
     <head>
         <title>My Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+        <style>
+
+          @media only screen and (max-width: 600px) {
+                body {
+                background-color: green;
+                }
+              }
+
+             #background {
+             background: url("flowers.jpg") repeat;
+             border: 2px solid black;
+            }
+
+            #transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+            text-align: center;
+
+            }
+
+            h2{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+            }
+
+
+           a:link {
+                    background-color: none ;
+                }
+
+            a:visited {
+                    background-color: cyan;
+                }
+
+            a:hover {
+                    background-color: lightgreen;
+                }
+
+            a:active {
+                    background-color: hotpink;
+                }
+
+
+            li {
+                    width: 50px;
+                    height: 20px;
+                    background: black;
+                    transition: width 2s;
+                }
+
+            li:hover {
+            width: 90px;
+                }
+
+            #coffee{
+                color :white;
+                background-color : #2A4150;
+                width :  100%;
+                height : 100%;
+
+
+            }
+
+            #tea {
+                border-radius: 25px;
+                background: #73AD21;
+                width: 100%;
+                height: 100%;
+            }
+
+
+
+            #milk{
+                height: 100%;
+                background: red;
+                background: linear-gradient(red, yellow, green);
+            }
+
+            .app{
+                font-weight :bold;
+                color : lightblue;
+            }
+
+            img{
+                width:240px;
+                height:240px;
+                margin-left:20px;
+            }
+
+
+
+        </style>
+
+
+
+
+
     </head>
+
     <body>
-        Hello, world!
+    <div id="background">
+    <div id="transbox">
+    <h2>First Web Application</h2>
+    </div>
+    </div>
+
+    <div>
+    <ul>
+      <li><a href="#C">Coffee</a></li>
+      <li><a href="#T">Tea</a></li>
+      <li><a href="#M">Milk</a></li>
+    </ul>
+    </div>
+
+    <div>
+        <h4><a name="C">Coffee</a></h2>
+        <p id = "coffee">
+        <span class=app>Coffee</span> is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. The genus Coffea is native to tropical Africa and Madagascar, the Comoros, Mauritius, and Réunion in the Indian Ocean</p>
+        <a href ="https://en.wikipedia.org/wiki/Coffee">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG"></a>
+    </div>
+
+    <div>
+        <h4><a name="T">Tea</a></h2>
+    <p id ="tea">
+        <span class=app>Tea</span> is an aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub native to Asia. After water, it is the most widely consumed drink in the world.</p>
+    </div>
+
+    <div>
+        <h4><a name="M">Milk</a></h2>
+    <p id ="milk">
+    <span class=app>Milk</span> is a white liquid produced by the mammary glands of mammals. It is the primary source of nutrition for infant mammals before they are able to digest other types of food</p>
+    <a href="page2.html">To See How tables look like</a>
+    </div>
+
+
+    <a href="#top">Top</a>
+
+
+    <nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
     </body>
 </html>
